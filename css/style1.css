@@ -1,0 +1,53 @@
+/* 左侧导航链接样式 */
+#side-menu .nav li a{
+    display:block;padding-left:63px;width:100px;height:52px;line-height:52px;color:#818080;font-size:14px;
+    background-image:url(images/icon-menu.png);background-repeat:no-repeat;background-position:-999px -999px;
+}
+#side-menu .nav li a.action1{background-position:20px 13px;}
+#side-menu .nav li a.action2{background-position:20px -35px;}
+#side-menu .nav li a.action3{background-position:20px -77px;}
+#side-menu .nav li a.action4{background-position:20px -123px;}
+#side-menu .nav li a.action5{background-position:20px -169px;}
+#side-menu .nav li a.action6{background-position:20px -213px;}
+#side-menu .nav li a.action7{background-position:20px -256px;}
+#side-menu .nav li.active a.act-menu{color:#2f2f2f;}
+#side-menu .nav li .action-menu{border-top:1px solid #e8e8e8;}
+#side-menu .nav li a.action-item{background-image:url(images/act-menu.png);background-color:#FFF;}
+#side-menu .nav li a.active{width:101px;border-style:solid;border-color:#9e9e9e;border-width:1px 0;color:#2f2f2f;background-position:136px 19px;}
+/* 三种颜色的向上/向下三角样式 */
+.btn-yellow .triangle-up,
+.btn-yellow .triangle-down{border-width:18px 10px;*margin-right:10px;}
+.btn-yellow .triangle-up{border-top-width:0;border-bottom-color:#E1CA3E;}
+.btn-yellow .triangle-down{border-bottom-width:0;border-top-color:#E1CA3E;}
+.btn-red .triangle-up,
+.btn-red .triangle-down{border-width:18px 10px;*margin-right:10px;}
+.btn-red .triangle-up{border-top-width:0;border-bottom-color:#FF4C4D;}
+.btn-red .triangle-down{border-bottom-width:0;border-top-color:#FF4C4D;}
+.btn-blue .triangle-up,
+.btn-blue .triangle-down{border-width:18px 10px;*margin-right:10px;}
+.btn-blue .triangle-up{border-top-width:0;border-bottom-color:#80C31C;}
+.btn-blue .triangle-down{border-bottom-width:0;border-top-color:#80C31C;}
+/* 执行中/完成/报表 三个tab */
+.tab-menu li a{display:block;text-align:center;width:150px;height:30px;line-height:30px;font-weight:bold;color:#666;background:url(images/tab.png) no-repeat;}
+/* 三个圆形链接样式 */
+.circle-red,.circle-yellow,.circle-blue{
+    float:left;display:block;width:24px;height:24px;overflow:hidden;text-indent:-999px;
+    margin-left:15px;background-image:url(images/circle.png);background-repeat:no-repeat;
+}
+.circle-red{background-position:left top;}
+.circle-yellow{background-position:left -34px;}
+.circle-blue{background-position:left -68px;}
+/* 
+ * 结算单 次数 导航
+ * 最后一个需添加标签 b & i 模拟右箭头
+ */
+.settlement-list li a{position:relative;display:block;height:26px;padding:0 15px;border-left:1px solid #999;color:#818080;background-color:#D8D8D8;}
+.settlement-list li a b,
+.settlement-list li a i{
+    position:absolute;display:block;width:0;height:0;overflow:hidden;
+    border-style:dashed;border-color:transparent;border-left-style:solid;
+}
+.settlement-list li a b{z-index:7;border-width:14px;border-right-width:0;border-left-color:#999;top:-1px;right:-13px;}
+.settlement-list li a i{z-index:9;border-width:13px;border-right-width:0;border-left-color:#FFF;top:0;right:-12px;}
+.settlement-list li a.active{color:#FFF;background-color:#999;}
+.settlement-list li a.active i{display:none;}
