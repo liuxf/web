@@ -25,6 +25,7 @@ body,div{font-size:12px;color:#2e2e2e;}
 table{width:100%;}
 table th{text-align:right;font-weight:normal;}
 table th, table td{padding:3px;}
+/* 左侧导航链接样式 */
 #side-menu{width:164px;overflow:hidden;padding-bottom:999px;margin-bottom:-999px;}
 #side-menu .nav{
     position:relative;z-index:9;
@@ -54,6 +55,7 @@ table th, table td{padding:3px;}
 
 .logo{display:block;width:163px;height:75px;overflow:hidden;}
 .wrapper{position:relative;width:100%;margin-top:75px;}
+/* 四种通用按钮样式 */
 .btn{
     display:inline-block;*display:inline;*zoom:1;border:0;color:#FFF;cursor:pointer;text-align:center;font-size:14px;font-weight:bold;
     background-image:url(images/button.png);background-repeat:no-repeat;
@@ -61,15 +63,18 @@ table th, table td{padding:3px;}
 .btn1{width:115px;height:38px;background-position:left top;}
 .btn2{width:86px;height:30px;background-position:left -48px;}
 .btn3{width:51px;height:30px;background-position:left -88px;}
-.btn4{width:63px;height:24px;background-position:left -128px;font-size:12px;}
+.btn4{width:63px;height:24px;background-position:left -128px;font-size:12px;font-weight:normal;}
 .btn5{width:115px;height:38px;background-position:left -162px;}
+/* 通用输入框样式，未定义宽度，可在需要处设置宽度即可 */
 .txt{border:1px solid #CCC;height:23px;line-height:21px;}
+/* 通用向上/向下三角样式 */
 .triangle-up,.triangle-down{
     display:inline-block;*display:inline;*zoom:1;width:0;height:0;overflow:hidden;
     border-width:9px 5px;border-style:dashed;border-color:transparent;*margin-right:5px;
 }
 .triangle-up{border-top-width:0;border-bottom-style:solid;border-bottom-color:#868686;}
 .triangle-down{border-bottom-width:0;border-top-style:solid;border-top-color:#868686;}
+/* 三种颜色的向上/向下三角样式 */
 .btn-yellow .triangle-up,
 .btn-yellow .triangle-down{border-width:18px 10px;*margin-right:10px;}
 .btn-yellow .triangle-up{border-top-width:0;border-bottom-color:#E1CA3E;}
@@ -82,8 +87,7 @@ table th, table td{padding:3px;}
 .btn-blue .triangle-down{border-width:18px 10px;*margin-right:10px;}
 .btn-blue .triangle-up{border-top-width:0;border-bottom-color:#80C31C;}
 .btn-blue .triangle-down{border-bottom-width:0;border-top-color:#80C31C;}
-
-
+/* 执行中/完成/报表 三个tab */
 .tab-menu{position:absolute;top:-30px;}
 .tab-menu li{float:left;display:block;position:relative;margin-right:-20px;width:150px;height:30px;border-bottom:1px solid #868686;overflow:hidden;}
 .tab-menu li.one{z-index:30;}
@@ -91,6 +95,7 @@ table th, table td{padding:3px;}
 .tab-menu li.end{z-index:0;}
 .tab-menu li.active{z-index:100;border-bottom:1px solid #FFF;}
 .tab-menu li a{display:block;text-align:center;width:150px;height:30px;line-height:30px;font-weight:bold;color:#666;background:url(images/tab.png) no-repeat;}
+/* 三个圆形链接样式 */
 .circle-red,.circle-yellow,.circle-blue{
     float:left;display:block;width:24px;height:24px;overflow:hidden;text-indent:-999px;
     margin-left:15px;background-image:url(images/circle.png);background-repeat:no-repeat;
@@ -105,34 +110,44 @@ table th, table td{padding:3px;}
 .block-head span em{color:#F00;}
 .block-content{border-style:solid;border-color:#d6d6d6;border-width:0 1px 1px 1px;padding:10px;}
 .block-content .txt{width:145px;}
+.block-items{padding:5px 0 10px;}
 .search-mini{position:absolute;width:202px;height:29px;right:200px;top:8px;background-color:#FFF;}
 .search-mini input{border:0;height:29px;line-height:25px;background-color:#FFF;}
 .search-mini .search-mini-text{width:170px;padding-left:3px;}
 .search-mini .search-mini-btn{cursor:pointer;width:29px;background-image:url(images/search.png);background-repeat:no-repeat;background-position:center center;}
 .search-handle{position:absolute;height:23px;padding:10px 15px;background-color:#FFF;right:1px;top:1px;color:#000;}
 .search-handle b{margin-left:5px;}
-
+/* 订单信息 数据表格 */
 table.datalist-order th,
 table.datalist-order td{padding:5px;color:#444;}
 table.datalist-order thead th{text-align:left;font-weight:bold;}
 table.datalist-order tbody td{background-color:#F6F6F6;border-style:solid;border-color:#C1C1C1;border-width:2px 0 1px;}
+/* 
+ * 订单单据信息 数据表格
+ * 使用 table.datalist-items 需在外面包裹 div.datalist-items-wrap 来配合使用
+ */
 .datalist-items-wrap{position:relative;overflow:hidden;}
 table.datalist-items{position:relative;margin-bottom:-1px;}
 table.datalist-items th,
 table.datalist-items td{padding:5px;color:#444;border-bottom:1px solid #CCC;}
 table.datalist-items thead th{text-align:left;font-weight:bold;}
+/* 结算单 数据表格 */
 table.datalist-settlement-view{border-top:1px solid #CCC;}
 table.datalist-settlement-view .txt{width:70px;}
 table.datalist-settlement-view th,
-table.datalist-settlement-view td{border-bottom:1px solid #CCC;}
+table.datalist-settlement-view td{border-bottom:1px solid #CCC;padding:5px;}
 table.datalist-settlement-view th{color:#818080;text-align:left;}
 table.datalist-settlement-view td{color:#444;}
+/* td.rb/th.rb 添加右边框 */
 table.datalist-settlement-view .rb{border-right:1px solid #CCC;}
+/* tr.bg/td.bg/th.bg 添加表格背景色 */
 table.datalist-settlement-view tr.bg td,
 table.datalist-settlement-view .bg{background-color:#DFDFDF;}
+/* tr.center/td.center/th.center 设置表格文本居中 */
 table.datalist-settlement-view tr.center td,
 table.datalist-settlement-view .center{text-align:center;}
 table.datalist-settlement-view td.head{width:20px;text-align:center;}
+/* 进度条 */
 .datalist-process{display:block;height:13px;}
 .datalist-process .process-1,
 .datalist-process .process-2,
@@ -140,12 +155,17 @@ table.datalist-settlement-view td.head{width:20px;text-align:center;}
 .datalist-process .process-1{background-image:url(images/process-1.jpg);}
 .datalist-process .process-2{background-image:url(images/process-2.jpg);}
 .datalist-process .process-3{background-image:url(images/process-3.jpg);}
+/* 结算单 外边框 */
 .datalist-settlement{position:relative;border:1px solid #000;color:#444;}
 .datalist-settlement-tip{
     position:absolute;width:80px;height:28px;padding-top:10px;top:-38px;left:-1px;text-align:center;background:url(images/settlement-tip.jpg) repeat-x;
     font-weight:bold;color:#666;border-style:solid;border-color:#000;border-width:1px 1px 0 1px;
 }
 .datalist-settlement-tip b{margin-left:6px;}
+/* 
+ * 结算单 次数 导航
+ * 最后一个需添加标签 b & i 模拟右箭头
+ */
 .settlement-list{display:block;height:28px;margin:10px;}
 .settlement-list li{float:left;height:26px;line-height:26px;border-style:solid;border-color:#999;border-width:1px 0;}
 .settlement-list li a{position:relative;display:block;height:26px;padding:0 15px;border-left:1px solid #999;color:#818080;background-color:#D8D8D8;}
@@ -165,3 +185,6 @@ table.datalist-settlement-view td.head{width:20px;text-align:center;}
 .settlement-company,
 .settlement-serial{float:left;width:50%;}
 .order-number{padding:5px 30px;}
+.foot-btn{padding:30px 20px 20px;background-color:#efefef;}
+.foot-btn .btn{margin-right:15px;}
+.foot-btn .abs-center{position:absolute;left:48%;margin-top:-8px;}
